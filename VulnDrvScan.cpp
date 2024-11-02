@@ -7,7 +7,7 @@
 #include <winternl.h>
 
 // Definitions:
-const char* search_imports[8] = {
+const char* search_imports[9] = {
 	"MmMapIoSpace",
 	"MmMapIoSpaceEx",
 	"MmMapLockedPages",
@@ -15,9 +15,14 @@ const char* search_imports[8] = {
 	"MmMapLockedPagesWithReservedMapping",
 	"IoAllocateMdl",
 	"ZwMapViewOfSection",
-	"MmCopyVirtualMemory"
+	"MmCopyVirtualMemory",
+	"IoCreateSymbolicLink"
 };
-
+const char* NotVulnerableList[] = {
+	"spaceparser.sys",
+	"vmkbd.sys",
+	"spaceport.sys"
+};
 const char* source_module = "ntoskrnl.exe";  // system services hosted in the kernel executable
 HANDLE VulnRes = NULL;  // file handle for vulnurable drivers results
 
@@ -260,74 +265,73 @@ BOOL CheckDriver(const char* DriverPath, BOOL Debug) {
 }
 
 
-PVOID AddGroup(PVOID ExistingBuf, const char* AddPath, SIZE_T ExistingSize) {
+PVOID AddGroup(PVOID ExistingBuffer, const char* AddPath, SIZE_T ExistingSize) {
 	char Divider = '~';
 	PVOID BufferName = NULL;
 	PVOID NewBuffer = NULL;
 
-	if (ExistingBuf == NULL) {
-		BufferName = malloc(strlen(AddPath));
-		memcpy(BufferName, AddPath, strlen(AddPath));
-	}
-	else {
-		BufferName = malloc(strlen(AddPath) + 1);
-		memcpy(BufferName, &Divider, 1);
-		memcpy((PVOID)((ULONG64)BufferName + 1), AddPath, strlen(AddPath));
-	}
 
-	if (ExistingBuf == NULL) {
+	// Add a specific path to the group buffer:
+	if (ExistingBuffer == NULL || ExistingSize == 0) {
 		NewBuffer = malloc(strlen(AddPath));
-	}
-	else {
-		NewBuffer = malloc(ExistingSize + strlen(AddPath) + 1);
-	}
-
-	if (ExistingSize != 0) {
-		memcpy(NewBuffer, ExistingBuf, ExistingSize);
-		memcpy((PVOID)((ULONG64)NewBuffer + ExistingSize), BufferName, strlen(AddPath) + 1);
-		free(ExistingBuf);
+		if (NewBuffer == NULL) {
+			return NULL;
+		}
+		memcpy(NewBuffer, AddPath, strlen(AddPath));
 		return NewBuffer;
 	}
-	else {
-		memcpy(NewBuffer, BufferName, strlen(AddPath));
-		return NewBuffer;
+	NewBuffer = malloc(ExistingSize + strlen(AddPath) + 1);
+	if (NewBuffer == NULL) {
+		return NULL;
 	}
+	memcpy(NewBuffer, ExistingBuffer, ExistingSize);
+	memcpy((PVOID)((ULONG64)NewBuffer + ExistingSize), &Divider, 1);
+	memcpy((PVOID)((ULONG64)NewBuffer + ExistingSize + 1), AddPath, strlen(AddPath));
+	free(ExistingBuffer);
+	return NewBuffer;
 }
 
 
 void PrintAllGroup(PVOID Buffer, SIZE_T BufferSize) {
 	char CurrentChar = NULL;
-	char NullTerm = '\0';
+	char NullTerminator = '\0';
 	ULONG64 LastStart = 0;
-	PVOID CurrName = NULL;
-	
-	for (SIZE_T CharInd = 0; CharInd < BufferSize; CharInd++) {
-		CurrentChar = ((char*)Buffer)[CharInd];
+	PVOID CurrentName = NULL;
+
+
+	// Iterate over all saved names from group list:
+	for (SIZE_T CharIndex = 0; CharIndex < BufferSize; CharIndex++) {
+		CurrentChar = ((char*)Buffer)[CharIndex];
 		if (CurrentChar == '~') {
-			CurrName = malloc(CharInd - (SIZE_T)LastStart + 1);
-			memcpy(CurrName, (PVOID)((ULONG64)Buffer + LastStart), CharInd - (SIZE_T)LastStart);
-			memcpy((PVOID)((ULONG64)CurrName + CharInd - (SIZE_T)LastStart), &NullTerm, 1);
-			printf("%s\n", (char*)CurrName);
-			free(CurrName);
-			LastStart = (ULONG64)CharInd + 1;
+			CurrentName = malloc(CharIndex - (SIZE_T)LastStart + 1);
+			if (CurrentName == NULL) {
+				printf("(null)\n");
+				continue;
+			}
+			memcpy(CurrentName, (PVOID)((ULONG64)Buffer + LastStart), CharIndex - (SIZE_T)LastStart);
+			memcpy((PVOID)((ULONG64)CurrentName + CharIndex - (SIZE_T)LastStart), &NullTerminator, 1);
+			printf("%s\n", (char*)CurrentName);
+			free(CurrentName);
+			LastStart = (ULONG64)CharIndex + 1;
 		}
 	}
 	free(Buffer);
 }
 
 
-int main()
-{
-	printf("[STR] Path to searching directory:\n");
-	const char* SearchPathAct = "C:\\Windows\\System32\\drivers\\";
-	SIZE_T VulSize = 0;
-	SIZE_T NoVulSize = 0;
-	PVOID VulBuf = NULL;
-	PVOID NoVulBuf = NULL;
-	BOOL CurrVul = FALSE;
-	
-	VulnRes = CreateFileA(
-		"vulndrvs.txt",
+int PerformSingleScan(char* ScanPath) {
+	HANDLE ResultsFile = INVALID_HANDLE_VALUE;
+	BOOL IsCurrentVulnerable = FALSE;
+	PVOID NoVulnerableBuffer = NULL;
+	PVOID VulnerableBuffer = NULL;
+	SIZE_T NoVulnerableSize = 0;
+	SIZE_T VulnerableSize = 0;
+	if (ScanPath == NULL) {
+		printf("PerformSingleScan() - invalid parameters\n");
+		return ERROR_INVALID_PARAMETER;
+	}
+	ResultsFile = CreateFileA(
+		"vulnerable_driver_report.txt",
 		GENERIC_WRITE,
 		0,
 		NULL,
@@ -335,50 +339,221 @@ int main()
 		FILE_ATTRIBUTE_NORMAL,
 		NULL);
 	if (VulnRes == INVALID_HANDLE_VALUE) {
-		std::cerr << "[ERR] cannot create vulnurable results file handle: " << GetLastError() << "\n";
+		printf("PerformSingleScan() - CreateFileA(): %d\n", GetLastError());
 	}
 
-	printf("[INF] Searching for drivers in path %s ..\n", SearchPathAct);
-	for (const auto& file : std::filesystem::directory_iterator(SearchPathAct)) {
+
+	// Iterate over all files recursively:
+	printf("Searching for drivers in path %s ..\n", ScanPath);
+	for (const auto& file : std::filesystem::recursive_directory_iterator(ScanPath)) {
 		if (!std::filesystem::is_regular_file(file.path())) {
-			printf("[INF] %s is not a regular file, moving on ..\n", file.path().string().c_str());
 			continue;
 		}
-
 		if (file.path().extension() != ".sys") {
-			printf("[INF] %s is not a regular file, moving on ..\n", file.path().string().c_str());
 			continue;
 		}
-
-		printf("\n--------------");
-		printf("\nSCAN STARTED: %s", file.path().string().c_str());
-		printf("\n--------------\n");
-		CurrVul = CheckDriver(file.path().string().c_str(), FALSE);
-		if (!CurrVul) {
-			NoVulBuf = AddGroup(NoVulBuf, file.path().string().c_str(), NoVulSize);
-			NoVulSize += strlen(file.path().string().c_str());
-			if (NoVulSize != 0) {
-				NoVulSize++;
+		IsCurrentVulnerable = CheckDriver(file.path().string().c_str(), FALSE);
+		if (!IsCurrentVulnerable) {
+			NoVulnerableBuffer = AddGroup(NoVulnerableBuffer, file.path().string().c_str(), NoVulnerableSize);
+			NoVulnerableSize += strlen(file.path().string().c_str());
+			if (NoVulnerableSize != 0) {
+				NoVulnerableSize++;
 			}
 		}
 		else {
-			VulBuf = AddGroup(VulBuf, file.path().string().c_str(), VulSize);
-			VulSize += strlen(file.path().string().c_str());
-			if (VulSize != 0) {
-				VulSize++;
+			VulnerableBuffer = AddGroup(VulnerableBuffer, file.path().string().c_str(), VulnerableSize);
+			VulnerableSize += strlen(file.path().string().c_str());
+			if (VulnerableSize != 0) {
+				VulnerableSize++;
 			}
 		}
-
-		printf("[INF] Scanning driver %s finished!\n", file.path().string().c_str());
 	}
 	CloseHandle(VulnRes);
 
+
+	// Print out the results:
 	printf("\n========");
-	printf("\nSUMMARY:");
+	printf("\nSINGLE SCAN RESULTS:");
 	printf("\n========\n");
 	printf("\nDrivers that could be vulnurable:\n");
-	PrintAllGroup(VulBuf, VulSize);
+	PrintAllGroup(VulnerableBuffer, VulnerableSize);
 	printf("\nDrivers that probably are not vulnurable:\n");
-	PrintAllGroup(NoVulBuf, NoVulSize);
-	return 0;
+	PrintAllGroup(NoVulnerableBuffer, NoVulnerableSize);
+}
+
+
+int PerformFullScan() {
+	HANDLE ResultsFile = INVALID_HANDLE_VALUE;
+	BOOL IsCurrentVulnerable = FALSE;
+	PVOID NoVulnerableBuffer = NULL;
+	PVOID VulnerableBuffer = NULL;
+	SIZE_T NoVulnerableSize = 0;
+	SIZE_T VulnerableSize = 0;
+	if (ScanPath == NULL) {
+		printf("PerformSingleScan() - invalid parameters\n");
+		return ERROR_INVALID_PARAMETER;
+	}
+	ResultsFile = CreateFileA(
+		"vulnerable_driver_report.txt",
+		GENERIC_WRITE,
+		0,
+		NULL,
+		CREATE_ALWAYS,
+		FILE_ATTRIBUTE_NORMAL,
+		NULL);
+	if (VulnRes == INVALID_HANDLE_VALUE) {
+		printf("PerformSingleScan() - CreateFileA(): %d\n", GetLastError());
+	}
+
+
+	// Iterate over all files recursively:
+	printf("Searching for drivers in path %s ..\n", ScanPath);
+	for (const auto& file : std::filesystem::recursive_directory_iterator(ScanPath)) {
+		if (!std::filesystem::is_regular_file(file.path())) {
+			continue;
+		}
+		if (file.path().extension() != ".sys") {
+			continue;
+		}
+		IsCurrentVulnerable = CheckDriver(file.path().string().c_str(), FALSE);
+		if (!IsCurrentVulnerable) {
+			NoVulnerableBuffer = AddGroup(NoVulnerableBuffer, file.path().string().c_str(), NoVulnerableSize);
+			NoVulnerableSize += strlen(file.path().string().c_str());
+			if (NoVulnerableSize != 0) {
+				NoVulnerableSize++;
+			}
+		}
+		else {
+			VulnerableBuffer = AddGroup(VulnerableBuffer, file.path().string().c_str(), VulnerableSize);
+			VulnerableSize += strlen(file.path().string().c_str());
+			if (VulnerableSize != 0) {
+				VulnerableSize++;
+			}
+		}
+	}
+	CloseHandle(VulnRes);
+
+
+	// Print out the results:
+	printf("\n========");
+	printf("\nSINGLE SCAN RESULTS:");
+	printf("\n========\n");
+	printf("\nDrivers that could be vulnurable:\n");
+	PrintAllGroup(VulnerableBuffer, VulnerableSize);
+	printf("\nDrivers that probably are not vulnurable:\n");
+	PrintAllGroup(NoVulnerableBuffer, NoVulnerableSize);
+}
+
+
+int PerformCustomScan(char* CustomListPath) {
+	HANDLE ResultsFile = INVALID_HANDLE_VALUE;
+	BOOL IsCurrentVulnerable = FALSE;
+	PVOID NoVulnerableBuffer = NULL;
+	PVOID VulnerableBuffer = NULL;
+	SIZE_T NoVulnerableSize = 0;
+	SIZE_T VulnerableSize = 0;
+	if (ScanPath == NULL) {
+		printf("PerformSingleScan() - invalid parameters\n");
+		return ERROR_INVALID_PARAMETER;
+	}
+	ResultsFile = CreateFileA(
+		"vulnerable_driver_report.txt",
+		GENERIC_WRITE,
+		0,
+		NULL,
+		CREATE_ALWAYS,
+		FILE_ATTRIBUTE_NORMAL,
+		NULL);
+	if (VulnRes == INVALID_HANDLE_VALUE) {
+		printf("PerformSingleScan() - CreateFileA(): %d\n", GetLastError());
+	}
+
+
+	// Iterate over all files recursively:
+	printf("Searching for drivers in path %s ..\n", ScanPath);
+	for (const auto& file : std::filesystem::recursive_directory_iterator(ScanPath)) {
+		if (!std::filesystem::is_regular_file(file.path())) {
+			continue;
+		}
+		if (file.path().extension() != ".sys") {
+			continue;
+		}
+		IsCurrentVulnerable = CheckDriver(file.path().string().c_str(), FALSE);
+		if (!IsCurrentVulnerable) {
+			NoVulnerableBuffer = AddGroup(NoVulnerableBuffer, file.path().string().c_str(), NoVulnerableSize);
+			NoVulnerableSize += strlen(file.path().string().c_str());
+			if (NoVulnerableSize != 0) {
+				NoVulnerableSize++;
+			}
+		}
+		else {
+			VulnerableBuffer = AddGroup(VulnerableBuffer, file.path().string().c_str(), VulnerableSize);
+			VulnerableSize += strlen(file.path().string().c_str());
+			if (VulnerableSize != 0) {
+				VulnerableSize++;
+			}
+		}
+	}
+	CloseHandle(VulnRes);
+
+
+	// Print out the results:
+	printf("\n========");
+	printf("\nSINGLE SCAN RESULTS:");
+	printf("\n========\n");
+	printf("\nDrivers that could be vulnurable:\n");
+	PrintAllGroup(VulnerableBuffer, VulnerableSize);
+	printf("\nDrivers that probably are not vulnurable:\n");
+	PrintAllGroup(NoVulnerableBuffer, NoVulnerableSize);
+}
+
+
+void PrintHelp() {
+	printf("\n========");
+	printf("\nOptions for vulnerable driver scanning:");
+	printf("\n1) full-scan on all of the known paths on a computer (\"VulnDrvScan.exe --iterate-full-scan\")");
+	printf("\n2) single-scan on all files recursively inside main path (\"VulnDrvScan.exe --iterate-single-scan main_path\")");
+	printf("\n3) custom-scan with file listing specific file/folder paths to scan (\"VulnDrvScan.exe --iterate-custom-scan custom_list_path\")");
+	printf("\n========\n");
+}
+
+
+int main(int argc, char* argv[]) {
+	printf("[STR] Path to searching directory:\n");
+	const char* SearchPathAct = "H:\\research_list\\";
+	SIZE_T VulSize = 0;
+	SIZE_T NoVulSize = 0;
+	PVOID VulBuf = NULL;
+	PVOID NoVulBuf = NULL;
+	BOOL CurrVul = FALSE;
+
+
+	// Check if parameters match the required full-scan, single-scan or custom-scan requirements:
+	if (argc != 2 && argc != 3) {
+		PrintHelp();
+		return ERROR_INVALID_PARAMETER;
+	}
+	if (strcmp(argv[1], "--iterate-full-scan")) {
+		return PerformFullScan();
+	}
+	if (strcmp(argv[1], "--iterate-single-scan")) {
+		std::string MainPath = argv[2];
+		if (!pathExists(MainPath)) {
+			printf("main() - main path %s does not exist\n", argv[2]);
+			PrintHelp();
+			return ERROR_INVALID_PARAMETER;
+		}
+		return PerformSingleScan(argv[2]);
+	}
+	if (strcmp(argv[1], "--iterate-custom-scan")) {
+		std::string CustomFilePath = argv[2];
+		if (!pathExists(CustomFilePath)) {
+			printf("main() - custom list path %s does not exist\n", argv[2]);
+			PrintHelp();
+			return ERROR_INVALID_PARAMETER;
+		}
+		return PerformCustomScan(argv[2]);
+	}
+	PrintHelp();
+	return ERROR_INVALID_PARAMETER;
 }

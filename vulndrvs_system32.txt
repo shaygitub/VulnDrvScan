@@ -1,0 +1,20 @@
+
+C:\Windows\System32\ebrntdrv.sys-
+  MmMapLockedPagesSpecifyCache
+  IoCreateSymbolicLink
+  
+C:\Windows\System32\epmdkdrv.sys-
+  MmMapLockedPagesSpecifyCache
+  IoCreateSymbolicLink
+  
+C:\Windows\System32\pmdiskdriver.sys-
+  MmMapLockedPagesSpecifyCache
+  IoCreateSymbolicLink
+  
+C:\Windows\System32\win32kbase.sys-
+  ZwMapViewOfSection
+  
+C:\Windows\System32\win32kns.sys-
+  IoAllocateMdl
+
+C:\Windows\System32\win32k.sys-  

@@ -1,957 +1,891 @@
 
-C:\Windows\System32\drivers\1394ohci.sys-
+H:\research_list\1394.inf_amd64_a08737ea39f5790b~1394ohci.sys-
   MmMapLockedPagesSpecifyCache
   MmMapIoSpaceEx
   IoAllocateMdl
   
-C:\Windows\System32\drivers\acpi.sys-
+H:\research_list\61883.inf_amd64_789f35bee584a939~61883.sys-
+  IoAllocateMdl
+  
+H:\research_list\acpi.inf_amd64_02568bc0229e6957~acpi.sys-
+  IoCreateSymbolicLink
   MmMapIoSpaceEx
   
-C:\Windows\System32\drivers\Acx01000.sys-
+H:\research_list\acxhdaudiop.inf_amd64_4998b15ad9e88fb7~AcxHdAudio.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\amdgpio2.inf_amd64_808fe94735c4c6b3~amdgpio2.sys-
+  MmMapIoSpace
+  
+H:\research_list\amdi2c.inf_amd64_d7ae71f8eb52c084~amdi2c.sys-
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\amdsbs.inf_amd64_e2a1e49127fb17ef~amdsbs.sys-
+  MmMapIoSpace
+  
+H:\research_list\athw8x.inf_amd64_55014eff4ceefbdf~athw8x.sys-
+  MmMapIoSpace
   IoAllocateMdl
   MmMapLockedPagesSpecifyCache
   
-C:\Windows\System32\drivers\afd.sys-
-  MmMapLockedPages
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\afunix.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\agilevpn.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\ahcache.sys-
+H:\research_list\b57nd60a.inf_amd64_77a731ab08be20a5~b57nd60a.sys-
   ZwMapViewOfSection
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpace
+  
+H:\research_list\basicdisplay.inf_amd64_19e58b6267591a82~BasicDisplay.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\basicrender.inf_amd64_d3f5994a67770b50~BasicRender.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\bcmdhd64.inf_amd64_e0bae6831f60ea5f~bcmdhd63.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\bcmwdidhdpcie.inf_amd64_977dcc915465b0e9~bcmpciedhd63.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\bth.inf_amd64_0bfe8970ec426433~bthport.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\bthpan.inf_amd64_874b60b07c8cda38~bthpan.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\cdrom.inf_amd64_f618268e6b943f2d~cdrom.sys-
+  IoAllocateMdl
+  
+H:\research_list\cht4sx64.inf_amd64_3a69b9b79f49eb50~cht4sx64.sys-
+  ZwMapViewOfSection
+  
+H:\research_list\cht4vx64.inf_amd64_b03448ba0b72ec47~cht4vx64.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\dc21x4vm.inf_amd64_3294fc34256dbb0e~dc21x4vm.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\disk.inf_amd64_8398eaa246ab3f17~disk.sys-
+  IoAllocateMdl
+  IoCreateSymbolicLink
+  
+H:\research_list\dtlitescsibus.inf_amd64_1e9e0203e659905c~dtlitescsibus.sys-
+  IoAllocateMdl
+  MmMapLockedPagesWithReservedMapping
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\dtliteusbbus.inf_amd64_c60bb6f964925bc7~dtliteusbbus.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\e1d68x64.inf_amd64_26255692c8b1c6b6~e1d68x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\ehstortcgdrv.inf_amd64_5cb0c23f45dac01c~EhStorTcgDrv.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\errdev.inf_amd64_616c5168a5b1807a~errdev.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\fdc.inf_amd64_7534987814b257b2~fdc.sys-
+  IoAllocateMdl
+  MmMapIoSpaceEx
+  
+H:\research_list\flpydisk.inf_amd64_acb1691126c93472~flpydisk.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  IoCreateSymbolicLink
+  
+H:\research_list\flpydisk.inf_amd64_acb1691126c93472~sfloppy.sys-
+  IoCreateSymbolicLink
+  
+H:\research_list\gameflt.inf_amd64_25b1fe3637126834~gameflt.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\gkupro2d.inf_amd64_c2bec6735502948d~GKUPRO2D.sys-
+  IoCreateSymbolicLink
+  
+H:\research_list\hdaudbus.inf_amd64_cd899f3bc430adaf~hdaudbus.sys-
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\hidbatt.inf_amd64_a6fa9bcee39a694f~hidbatt.sys-
+  IoAllocateMdl
+  
+H:\research_list\hidbth.inf_amd64_b5de0e7e45555968~hidbth.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\hidinterrupt.inf_amd64_eeb986311b3a5b16~hidinterrupt.sys-
+  IoAllocateMdl
+  
+H:\research_list\hidir.inf_amd64_7bf4a320e4ec8b3d~hidir.sys-
+  MmMapLockedPages
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\hidvhf.inf_amd64_0a924aec7600dcde~vhf.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\iaahcic.inf_amd64_4fdf3f31a5c62f92~iaStorAC.sys-
+  MmMapIoSpace
+  
+H:\research_list\iagpio.inf_amd64_07b64df61e783bfe~iagpio.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\iai2c.inf_amd64_a77c815b2999404d~iai2c.sys-
+  MmMapIoSpaceEx
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\ialpss2i_gpio2_bxt_p.inf_amd64_8be317e01b44bf5a~iaLPSS2i_GPIO2_BXT_P.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\ialpss2i_gpio2_cnl.inf_amd64_a60833fda31e9831~iaLPSS2i_GPIO2_CNL.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\ialpss2i_gpio2_glk.inf_amd64_dad1e0a2b185e32b~iaLPSS2i_GPIO2_GLK.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\ialpss2i_gpio2_skl.inf_amd64_b68199ad84607c21~iaLPSS2i_GPIO2.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\ialpss2i_i2c_bxt_p.inf_amd64_190858fd8e931883~iaLPSS2i_I2C_BXT_P.sys-
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\ialpss2i_i2c_cnl.inf_amd64_f668309b543472eb~iaLPSS2i_I2C_CNL.sys-
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\ialpss2i_i2c_glk.inf_amd64_7b6c08738ca8a856~iaLPSS2i_I2C_GLK.sys-
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\ialpss2i_i2c_skl.inf_amd64_9d9dbb01837eba23~iaLPSS2i_I2C.sys-
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\ialpssi_i2c.inf_amd64_8e00e1aed7fbdf70~iaLPSSi_I2C.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\iastorac.inf_amd64_ac65d2dfc98d80ce~iaStorAC.sys-
+  MmMapIoSpace
+  
+H:\research_list\iastorav.inf_amd64_87f761c07c99d5e7~iaStorAVC.sys-
+  MmMapIoSpace
+  
+H:\research_list\iastorv.inf_amd64_9c09bd1df352f065~iaStorV.sys-
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpace
+  IoCreateSymbolicLink
+  IoAllocateMdl
+  
+H:\research_list\ibtusb.inf_amd64_cef9c75b00b2f9b4~ibtusb.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\iigd_dch.inf_amd64_51f685305808e3a5~igdkmd64.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpace
+  MmMapIoSpaceEx
+  
+H:\research_list\iigd_dch.inf_amd64_51f685305808e3a5~igdkmdn64.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  MmMapIoSpace
+  MmMapIoSpaceEx
+  
+H:\research_list\image.inf_amd64_d2006c0517ddc60c~sonydcam.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\input.inf_amd64_71e43a6eaa912e56~hidclass.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\input.inf_amd64_71e43a6eaa912e56~hidusb.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\intcdaud.inf_amd64_461786e87388a070~IntcDAud.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\intelpep.inf_amd64_7cf9a726e4552081~intelpep.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\intelpmax.inf_amd64_2ddee95f7a5d85db~intelpmax.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\intelta.inf_amd64_bf3c0f37c937104d~IntelTA.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\ipmidrv.inf_amd64_6ca4f16705af5e77~IPMIDrv.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\ipoib6x.inf_amd64_ef71073a5867971f~ipoib6x.sys-
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpaceEx
+  
+H:\research_list\iscsi.inf_amd64_260e9b4b7d61bc83~msiscsi.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpaceEx
+  
+H:\research_list\keyboard.inf_amd64_5938c699b80ebb8f~i8042prt.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\keyboard.inf_amd64_5938c699b80ebb8f~kbdhid.sys-
+  IoAllocateMdl
+  
+H:\research_list\kltap.inf_amd64_1cfd0d87ad073950~kltap.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\mausbhost.inf_amd64_34c86c15777c913b~mausbhost.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\mausbhost.inf_amd64_34c86c15777c913b~mausbip.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\mdmagm64.inf_amd64_7f60bc7ff484a292~ltmdm64.sys-
+  MmMapIoSpace
+  IoCreateSymbolicLink
+  
+H:\research_list\mdmags64.inf_amd64_767b2d723d0fe83b~agrsm64.sys-
+  IoCreateSymbolicLink
+  MmMapIoSpace
+  
+H:\research_list\mdmbtmdm.inf_amd64_9e5602638617558e~bthmodem.sys-
+  IoCreateSymbolicLink
+  IoAllocateMdl
+  
+H:\research_list\mdmirmdm.inf_amd64_ae1f167e12ddb854~MSIRCOMM.sys-
+  IoCreateSymbolicLink
+  IoAllocateMdl
+  
+H:\research_list\mdmmot64.inf_amd64_2afbe7d3ad20f42a~SmSerl64.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  IoCreateSymbolicLink
+  MmMapIoSpace
+  
+H:\research_list\mlx4_bus.inf_amd64_4c426f3bebc68844~ibbus.sys-
+  IoCreateSymbolicLink
+  
+H:\research_list\mlx4_bus.inf_amd64_4c426f3bebc68844~mlx4_bus.sys-
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\mlx4_bus.inf_amd64_4c426f3bebc68844~ndfltr.sys-
+  IoCreateSymbolicLink
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\modemcsa.inf_amd64_0ead899aeb6cb9a8~MODEMCSA.sys-
+  IoAllocateMdl
+  MmMapLockedPages
+  
+H:\research_list\monitor.inf_amd64_b92f534ca1fea193~monitor.sys-
+  IoCreateSymbolicLink
+  
+H:\research_list\mrvlpcie8897.inf_amd64_07fc330c5a5730ca~mrvlpcie8897.sys-
+  IoAllocateMdl
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\msdv.inf_amd64_5c153f7ff7d0d00a~msdv.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\mshdc.inf_amd64_f6ccd5b2c8226c4a~ataport.sys-
+  IoAllocateMdl
+  IoCreateSymbolicLink
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  MmMapLockedPagesWithReservedMapping
+  
+H:\research_list\mshdc.inf_amd64_f6ccd5b2c8226c4a~pciidex.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\msmouse.inf_amd64_1793a485b491b199~mouhid.sys-
+  IoAllocateMdl
+  
+H:\research_list\msports.inf_amd64_f2e8231e8b60f214~serial.sys-
+  MmMapIoSpaceEx
+  IoCreateSymbolicLink
+  
+H:\research_list\mstape.inf_amd64_3e2c4fa2d4cbb487~mstape.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\msux64w10.inf_amd64_5aa81644af5957b3~msux64w10.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\mwlu97w8x64.inf_amd64_23bc3dc6d91eebdc~mwlu97w8x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net1ic64.inf_amd64_5f033e913d34d111~e1i65x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net1yx64.inf_amd64_8604d8a50804b9c1~e1y60x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net44amd.inf_amd64_450d4b1e35cc8e0d~b44amd64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net7400-x64-n650.inf_amd64_557ce3b37c3e0e3b~lan7400-x64-n650.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net7500-x64-n650f.inf_amd64_cc87c915f33d1c27~lan7500-x64-n650f.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net7800-x64-n650f.inf_amd64_178f1bdb49a6e2fd~lan7800-x64-n650f.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net8185.inf_amd64_7a30f5a9441cd55b~RTL85n64.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net8187bv64.inf_amd64_bc859d32f3e2f0d5~RTL8187B.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net8187se64.inf_amd64_99a4ca261f585f17~RTL8187Se.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net8192se64.inf_amd64_167684f9283b4eca~rtl8192se.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net8192su64.inf_amd64_66c8bfc7a4b1feed~RTL8192su.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net819xp.inf_amd64_ff7a5dd4f9b1ceba~rtl819xp.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\net9500-x64-n650f.inf_amd64_e92c5a65e41993f9~lan9500-x64-n650f.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netadapter.inf_amd64_4d8ab2b1a6a69682~vmnetadapter.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netathr10x.inf_amd64_2691c4f95b80eb3b~Qcamain10x64.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netathrx.inf_amd64_220db23f5419ea8d~athwnx.sys-
+  MmMapIoSpace
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netax88179_178a.inf_amd64_b6748bc8bb8ccf4d~ax88179_178a.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netax88772.inf_amd64_5d1c92f42d958529~ax88772.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netbridge.inf_amd64_361a9866b19d71ea~vmnetbridge.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netbvbda.inf_amd64_06bc8afcd2617abf~bxvbda.sys-
+  MmMapIoSpaceEx
+  ZwMapViewOfSection
+  
+H:\research_list\netbxnda.inf_amd64_1fff3bc87a99b0f1~bxnd60a.sys-
+  MmMapLockedPagesWithReservedMapping
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\nete1e3e.inf_amd64_895623810c19146a~e1e6032e.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\nete1g3e.inf_amd64_af58b4e19562a3f9~E1G6032E.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netefe3e.inf_amd64_7830581a689ef40d~eFE5b32e.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netelx.inf_amd64_7812e4e45c4a5eb1~ocnd65.sys-
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpaceEx
+  
+H:\research_list\netevbda.inf_amd64_1503f4d5a0d6ba56~evbda.sys-
+  MmMapIoSpaceEx
+  ZwMapViewOfSection
+  
+H:\research_list\netg664.inf_amd64_84cd7b2798e0a666~SiSG664.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netjme.inf_amd64_752bf22f1598bb7e~NETJME.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netk57a.inf_amd64_d823e3edc27ae17c~k57nd60a.sys-
+  ZwMapViewOfSection
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netl160a.inf_amd64_e4cbe375963a69e9~l160x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netl1e64.inf_amd64_8d5ca5ab1472fc44~L1E62x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netl260a.inf_amd64_783312763f8749c7~l260x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netmlx4eth63.inf_amd64_3809a4a3e7e07703~mlx4eth63.sys-
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netmlx5.inf_amd64_101a408e6cb1d8f8~mlx5.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  MmMapIoSpace
+  
+H:\research_list\netmyk64.inf_amd64_1f949c30555f4111~yk63x64.sys-
+  ZwMapViewOfSection
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netnvm64.inf_amd64_35bbbe80dec15683~nvm62x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netnvma.inf_amd64_7080f6b8ea1744fb~nvm60x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netr28ux.inf_amd64_d5996f2a9d9aa9e3~netr28ux.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netr28x.inf_amd64_5d63c7bcbf29107f~netr28x.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netr7364.inf_amd64_310ee0bc0af86ba3~netr7364.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netrndis.inf_amd64_02db5c384e07aa47~rndismp6.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netrndis.inf_amd64_02db5c384e07aa47~usb80236.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\netrtl64.inf_amd64_8e9c2368fe308df2~Rtnic64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netrtwlane.inf_amd64_20caba88bd7f0bb3~rtwlane.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netrtwlane01.inf_amd64_b02695ef070d7a42~rtwlane01.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netrtwlane_13.inf_amd64_992f4f46e65f30d4~rtwlane_13.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netrtwlans.inf_amd64_97cd1a72c2a7829c~rtwlans.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netrtwlanu.inf_amd64_1815bafd14dc59f0~rtwlanu.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\nett4x64.inf_amd64_54eacac1858c78ab~cht4nx64.sys-
+  MmMapIoSpaceEx
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netv1x64.inf_amd64_30040c3eb9d7ade4~v1q63x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netvf63a.inf_amd64_a090e6cfaf18cb5c~fetn63a.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netvg63a.inf_amd64_9f5493180b1252cf~getn63a.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwbw02.inf_amd64_1c4077fa004e73b4~Netwbw02.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwew00.inf_amd64_325c0bd6349ed81c~NETwew00.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwew01.inf_amd64_153e01d761813df2~NETwew01.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwlv64.inf_amd64_0b9818131664d91e~netwlv64.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwmbclass.inf_amd64_6b443bc10f9a96b8~cxwmbclass.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\netwns64.inf_amd64_162bb49f925c6463~NETwNs64.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwsw00.inf_amd64_24d55504ae3587aa~Netwsw00.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw02.inf_amd64_42e02bae858d0fbd~Netwtw02.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw04.inf_amd64_1d072d6f2e9f11bf~Netwtw04.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw04.inf_amd64_c8f5ae6576289a2d~Netwtw04.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw06.inf_amd64_2edd50e7a54d503b~Netwtw06.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw06.inf_amd64_c033b6b2dcb510c3~Netwtw06.sys-
+  MmMapIoSpace
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw08.inf_amd64_1923445d364467c8~Netwtw08.sys-
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpace
+  IoAllocateMdl
+  
+H:\research_list\netwtw08.inf_amd64_1923445d364467c8~Netwtw10.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw08.inf_amd64_45271dfa84d9e035~Netwtw08.sys-
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpace
+  IoAllocateMdl
+  
+H:\research_list\netwtw08.inf_amd64_7b17da4aad2a90eb~Netwtw08.sys-
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpace
+  IoAllocateMdl
+  
+H:\research_list\netwtw08.inf_amd64_7b17da4aad2a90eb~Netwtw10.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw08.inf_amd64_7b17da4aad2a90eb~Netwtw12.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw08.inf_amd64_7c0c516fb22456cd~Netwtw08.sys-
+  MmMapIoSpace
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw08.inf_amd64_f414b3d0e8a37491~Netwtw08.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  MmMapIoSpace
+  
+H:\research_list\netwtw08.inf_amd64_f414b3d0e8a37491~Netwtw10.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netwtw08.inf_amd64_f414b3d0e8a37491~Netwtw14.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\netxex64.inf_amd64_ede00b448bfe8099~ixe60x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\npcap.inf_amd64_7abd107f8e2977e7~npcap.sys-
+  IoCreateSymbolicLink
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\nvdimm.inf_amd64_9bb46b0de5ea33cd~nvdimm.sys-
+  IoCreateSymbolicLink
+  
+H:\research_list\nvpcf.inf_amd64_d387ad719b6892c7~nvpcf.sys-
+  ZwMapViewOfSection
+  MmMapIoSpace
+  
+H:\research_list\nvppc.inf_amd64_a0410c7d79f2444c~UcmCxUcsiNvppc.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\nvraid.inf_amd64_144351277838b429~nvraid.sys-
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpace
+  IoCreateSymbolicLink
+  IoAllocateMdl
+  
+H:\research_list\nvvad.inf_amd64_3328072030df5d56~nvvad64v.sys-
+  IoAllocateMdl
+  
+H:\research_list\nvvad.inf_amd64_35079c3b2e98dd66~nvvad64v.sys-
+  IoAllocateMdl
+  
+H:\research_list\nv_dispig.inf_amd64_7e5fd280efaa5445~nvlddmkm.sys-
+  MmMapLockedPagesSpecifyCache
+  IoCreateSymbolicLink
+  IoAllocateMdl
+  ZwMapViewOfSection
+  MmMapLockedPagesWithReservedMapping
+  MmMapIoSpace
+  MmMapIoSpaceEx
+  
+H:\research_list\nv_dispig.inf_amd64_7e5fd280efaa5445~nvpciflt.sys-
+  IoCreateSymbolicLink
+  
+H:\research_list\oemvista.inf_amd64_6c3b121e4e82e247~tap0901.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\oemvista.inf_amd64_ba4c0fa2d195a7ca~tapprotonvpn.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\oemwin2k.inf_amd64_5f3e47f5a2d5215c~tapvyprvpn.sys-
+  MmMapLockedPagesSpecifyCache
+  MmMapLockedPages
+  
+H:\research_list\pci.inf_amd64_caf2dad963c4f860~pci.sys-
+  IoCreateSymbolicLink
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpaceEx
+  
+H:\research_list\pcmcia.inf_amd64_cb18bba4788e47f7~pcmcia.sys-
+  IoCreateSymbolicLink
+  MmMapIoSpaceEx
+  
+H:\research_list\pmem.inf_amd64_2cca8a439f8a71e8~pmem.sys-
+  MmMapIoSpaceEx
+  MmMapLockedPagesWithReservedMapping
+  IoCreateSymbolicLink
+  
+H:\research_list\rt640x64.inf_amd64_8984d8483eef476c~rt640x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\rt640x64.inf_amd64_eb9863a10df269b8~rt640x64.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\rtump64x64.inf_amd64_1dbc57de08fc51d0~rtump64x64.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\rtux64w10.inf_amd64_d6132e4c7fe2fac6~rtux64w10.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\rtwlanu_oldic.inf_amd64_1a82423cc076e882~rtwlanu_oldIC.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\sbp2.inf_amd64_76e1b89751cd652f~sbp2port.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\scmbus.inf_amd64_5ed4d064db1c1769~scmbus.sys-
+  IoCreateSymbolicLink
+  
+H:\research_list\sdbus.inf_amd64_762c0132efa48db2~dumpsd.sys-
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  MmMapLockedPagesWithReservedMapping
+  
+H:\research_list\sdbus.inf_amd64_762c0132efa48db2~sdbus.sys-
+  IoAllocateMdl
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  MmMapLockedPagesWithReservedMapping
+  
+H:\research_list\sdstor.inf_amd64_c60f7964a96b8aab~sdstor.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\spaceport.inf_amd64_75db2a57ca8ef34d~spaceport.sys-
+  IoCreateSymbolicLink
+  MmMapLockedPagesWithReservedMapping
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\sti.inf_amd64_13cb4c639b27cb07~scsiscan.sys-
+  IoAllocateMdl
+  IoCreateSymbolicLink
+  MmMapLockedPages
+  
+H:\research_list\sti.inf_amd64_13cb4c639b27cb07~usbscan.sys-
+  IoCreateSymbolicLink
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\tdibth.inf_amd64_01d863816044b9ff~rfcomm.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\termkbd.inf_amd64_a0634dcf2da1127e~terminpt.sys-
+  IoCreateSymbolicLink
+  
+H:\research_list\termmou.inf_amd64_c4c8f901e3534194~terminpt.sys-
+  IoCreateSymbolicLink
+  
+H:\research_list\tpm.inf_amd64_f5f6184385110576~tpm.sys-
+  IoCreateSymbolicLink
+  MmMapIoSpaceEx
+  
+H:\research_list\tsgenericusbdriver.inf_amd64_e2a5bd66234c49e2~TsUsbGD.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\tsusbhub.inf_amd64_4a438b43b1734917~tsusbhub.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\uaspstor.inf_amd64_5e080aa49043ecea~uaspstor.sys-
+  IoAllocateMdl
+  
+H:\research_list\ucmucsiacpiclient.inf_amd64_a233292790c69f03~UcmUcsiAcpiClient.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\ufxchipidea.inf_amd64_1c78775fffab6a0a~UfxChipidea.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\ufxsynopsys.inf_amd64_fc630a18f07bcc4b~ufxsynopsys.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\urssynopsys.inf_amd64_057fa37902020500~urssynopsys.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\usbaudio2.inf_amd64_8d164ac6f7088f97~usbaudio2.sys-
+  IoAllocateMdl
+  
+H:\research_list\usbnet.inf_amd64_9e6bb7a4b7338267~usbnet.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\usbport.inf_amd64_230f9025c8623e5d~usbhub.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\usbport.inf_amd64_230f9025c8623e5d~usbport.sys-
+  IoCreateSymbolicLink
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  MmMapIoSpaceEx
+  
+H:\research_list\vboxnetadp6.inf_amd64_108aa80dcbfa6952~VBoxNetAdp6.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\vboxnetlwf.inf_amd64_c7737e90db5729fb~VBoxNetLwf.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\vboxusb.inf_amd64_c50c384d0cbfb450~VBoxUSB.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\vhdmp.inf_amd64_f02acca1639a7c6e~vhdmp.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  MmMapLockedPagesWithReservedMapping
+  IoCreateSymbolicLink
+  ZwMapViewOfSection
+  
+H:\research_list\virtdisk.inf_amd64_9a7f42b85c7def50~bttflt.sys-
+  IoAllocateMdl
+  MmMapIoSpaceEx
+  
+H:\research_list\vmci.inf_amd64_380b176bc9bae698~vmci.sys-
+  MmMapIoSpace
+  IoAllocateMdl
+  IoCreateSymbolicLink
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\vmusb.inf_amd64_bb336ccced75363c~vmusb.sys-
+  MmMapLockedPagesSpecifyCache
+  IoCreateSymbolicLink
+  
+H:\research_list\volmgr.inf_amd64_32c77fdb30d7514d~volmgr.sys-
+  IoAllocateMdl
+  IoCreateSymbolicLink
+  
+H:\research_list\wdmaudio.inf_amd64_4d13929a95486fc6~drmk.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\wdmaudio.inf_amd64_4d13929a95486fc6~portcls.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\wdmvsc.inf_amd64_8666ee4da6ad6325~dmvsc.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\wgencounter.inf_amd64_f496147578cad554~vmgencounter.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\whvcrash.inf_amd64_38ca62866d7d6293~hvcrash.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\wintun.inf_amd64_8ed20477a29aa8f7~wintun.sys-
+  IoAllocateMdl
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\winusb.inf_amd64_ced441476847bd1a~winusb.sys-
+  IoAllocateMdl
+  
+H:\research_list\wireguard.inf_amd64_bd22474b85ad1b6f~wireguard.sys-
+  MmMapLockedPagesSpecifyCache
+  IoAllocateMdl
+  
+H:\research_list\wnetvsc.inf_amd64_504ddb103ffd1e65~netvsc.sys-
+  IoAllocateMdl
+  MmMapIoSpaceEx
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\wpcip.inf_amd64_ebcc29dd4981fe22~pcip.sys-
+  MmMapIoSpaceEx
+  
+H:\research_list\wstorflt.inf_amd64_9cf53b4cba8481f3~vmstorfl.sys-
+  IoAllocateMdl
+  
+H:\research_list\wstorvsp.inf_amd64_9629add89334bf6f~storvsp.sys-
+  MmMapLockedPagesSpecifyCache
+  
+H:\research_list\wvid.inf_amd64_f8bfef47dbfb62e3~Vid.sys-
+  MmMapIoSpaceEx
   MmCopyVirtualMemory
-  
-C:\Windows\System32\drivers\amdgpio2.sys-
-  MmMapIoSpace
-  
-C:\Windows\System32\drivers\amdi2c.sys-
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\amdsbs.sys-
-  MmMapIoSpace
-  
-C:\Windows\System32\drivers\AppVStrm.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\AppvVfs.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\AsIO2.sys-
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\ataport.sys-
-  IoAllocateMdl
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\BadlionAnticheat.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpace
-  IoAllocateMdl
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\bowser.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\bridge.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\bthmodem.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\bthpan.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\bthport.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\bttflt.sys-
-  IoAllocateMdl
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\bxvbda.sys-
-  MmMapIoSpaceEx
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\cdfs.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\cdrom.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\cht4sx64.sys-
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\cht4vx64.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\cimfs.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\Classpnp.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\cldflt.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\clfs.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\ClipSp.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\cng.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\cnghwassist.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\condrv.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\crashdmp.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\csc.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\Dbgv.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\disk.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\dmvsc.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\drmk.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\Dumpata.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\dumpsd.sys-
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\dumpsdport.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\dxgkrnl.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  ZwMapViewOfSection
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\dxgmms1.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\dxgmms2.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpaceEx
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\e1i65x64.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\EhStorClass.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\EhStorTcgDrv.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\ene.sys-
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\errdev.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\evbda.sys-
-  MmMapIoSpaceEx
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\exfat.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\fastfat.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\fdc.sys-
-  IoAllocateMdl
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\filecrypt.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\flpydisk.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\fltMgr.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\fvevol.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPagesWithReservedMapping
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\GLCKIO2.sys-
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\hdaudbus.sys-
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\hidbatt.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\hidbth.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\hidclass.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\hidinterrupt.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\hidir.sys-
-  MmMapLockedPages
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\hidusb.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\http.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  MmMapLockedPages
-  
-C:\Windows\System32\drivers\hvcrash.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\hvservice.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\hvsocket.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\HyperVideo.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\i8042prt.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\iagpio.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\iai2c.sys-
-  MmMapIoSpaceEx
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\iaLPSS2i_GPIO2.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\iaLPSS2i_GPIO2_BXT_P.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\iaLPSS2i_GPIO2_CNL.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\iaLPSS2i_GPIO2_GLK.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\iaLPSS2i_I2C.sys-
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\iaLPSS2i_I2C_BXT_P.sys-
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\iaLPSS2i_I2C_CNL.sys-
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\iaLPSS2i_I2C_GLK.sys-
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\iaLPSSi_I2C.sys-
-  MmMapIoSpace
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\iaStorAC.sys-
-  MmMapIoSpace
-  
-C:\Windows\System32\drivers\iaStorAVC.sys-
-  MmMapIoSpace
-  
-C:\Windows\System32\drivers\iaStorV.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpace
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\ICCWDT.sys-
-  MmMapIoSpace
-  
-C:\Windows\System32\drivers\intelpep.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\intelpmax.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\IntelTA.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\iorate.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\IPMIDrv.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\ipnat.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\ipt.sys-
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\kbdhid.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\ks.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\ksecdd.sys-
-  MmMapLockedPagesSpecifyCache
-  MmCopyVirtualMemory
-  
-C:\Windows\System32\drivers\ksthunk.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\l2bridge.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\lltdio.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\logi_joy_bus_enum.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\luafv.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\lunparser.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\lxcore.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\mausbhost.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\mausbip.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\mlx4_bus.sys-
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\mouhid.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\mrxdav.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\mrxsmb.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\mrxsmb20.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\MsIo64.sys-
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\msiscsi.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\mskssrv.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\msquic.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\ndfltr.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\ndis.sys-
-  MmMapIoSpaceEx
-  IoAllocateMdl
-  MmMapLockedPages
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\ndiscap.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\ndisuio.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\NDKPing.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\NetAdapterCx.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\netbios.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\netbt.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\netio.sys-
-  MmMapLockedPagesWithReservedMapping
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\netvsc.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\Netwtw08.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpace
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\npcap.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\npfs.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\ntfs.sys-
-  MmMapIoSpaceEx
-  IoAllocateMdl
-  MmMapLockedPagesWithReservedMapping
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\nvraid.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpace
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\nvvad64v.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\nvvhci.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\nwifi.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\p9rdr.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\partmgr.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\passthruparser.sys-
-  IoAllocateMdl
-  MmMapLockedPagesWithReservedMapping
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\pci.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\pciidex.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\pcip.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\pcmcia.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\pcw.sys-
-  MmCopyVirtualMemory
-  
-C:\Windows\System32\drivers\PEAuth.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\PktMon.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\pmem.sys-
-  MmMapIoSpaceEx
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\portcls.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\pvhdparser.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\qwavedrv.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\ramdisk.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\ramparser.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\raspptp.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\rdbss.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\rdpdr.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\rdyboost.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\refs.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\refsv1.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\rfcomm.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\rmcast.sys-
-  ZwMapViewOfSection
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\RNDISMP.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\rspndr.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\rteth.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\RTKVHD64.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  MmMapIoSpace
-  
-C:\Windows\System32\drivers\rzhnet.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\sbp2port.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\scsiport.sys-
-  MmMapIoSpace
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\sdbus.sys-
-  IoAllocateMdl
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPagesWithReservedMapping
-  
-C:\Windows\System32\drivers\sdport.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\sdstor.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\serial.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\SgrmAgent.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  ZwMapViewOfSection
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\smbdirect.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\spaceparser.sys-
-  IoAllocateMdl
-  MmMapLockedPagesWithReservedMapping
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\spaceport.sys-
-  MmMapLockedPagesWithReservedMapping
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\SpbCx.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\srv2.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\srvnet.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\storport.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\storqosflt.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\storvsp.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\stream.sys-
-  MmMapLockedPages
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\SynTP.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpace
-  
-C:\Windows\System32\drivers\tap0901.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\tapprotonvpn.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\tapvyprvpn.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapLockedPages
-  
-C:\Windows\System32\drivers\tcpip.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\tdi.sys-
-  MmMapLockedPagesWithReservedMapping
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\tdx.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\TeeDriverW8x64.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpace
-  
-C:\Windows\System32\drivers\tpm.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\TsUsbGD.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\tsusbhub.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\tunnel.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\uaspstor.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\UcmUcsiAcpiClient.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\Ucx01000.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\Udecx.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\udfs.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\ufxsynopsys.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\usb8023.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\usbaudio2.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\usbhub.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\USBPcap.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\usbport.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\VBoxNetAdp6.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\VBoxNetLwf.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\VBoxSup.sys-
-  MmMapLockedPages
-  MmMapIoSpace
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\VerifierExt.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpace
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\vfpext.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\vhdmp.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  MmMapLockedPagesWithReservedMapping
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\vhdparser.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\vhf.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\Vid.sys-
-  MmMapIoSpaceEx
-  MmCopyVirtualMemory
   IoAllocateMdl
   MmMapLockedPagesSpecifyCache
   MmMapLockedPagesWithReservedMapping
   ZwMapViewOfSection
   
-C:\Windows\System32\drivers\vkrnlintvsc.sys-
+H:\research_list\wvkrnlintvsc.inf_amd64_d4c626b7e8d2017c~vkrnlintvsc.sys-
   MmMapLockedPagesSpecifyCache
   
-C:\Windows\System32\drivers\vkrnlintvsp.sys-
+H:\research_list\wvkrnlintvsp.inf_amd64_87f0d2ff4a51c678~vkrnlintvsp.sys-
   IoAllocateMdl
   MmMapLockedPagesSpecifyCache
   
-C:\Windows\System32\drivers\vmbkmcl.sys-
-  MmMapLockedPagesWithReservedMapping
-  IoAllocateMdl
+H:\research_list\wvmbus.inf_amd64_e12f532da5bfc4dd~vmbus.sys-
   MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\vmbkmclr.sys-
-  MmMapLockedPagesWithReservedMapping
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\vmbus.sys-
   IoAllocateMdl
   MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
   
-C:\Windows\System32\drivers\VMBusHID.sys-
+H:\research_list\wvmbushid.inf_amd64_fd2fe159a9daf508~VMBusHID.sys-
   IoAllocateMdl
   MmMapLockedPagesSpecifyCache
   
-C:\Windows\System32\drivers\vmbusr.sys-
+H:\research_list\wvmbusr.inf_amd64_a95cc3d240d46cc6~vmbusr.sys-
   IoAllocateMdl
   MmMapLockedPagesSpecifyCache
   
-C:\Windows\System32\drivers\vmci.sys-
+H:\research_list\wvmbusvideo.inf_amd64_1c6bcd43f98d094f~HyperVideo.sys-
   IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
   
-C:\Windows\System32\drivers\vmgencounter.sys-
+H:\research_list\wvpci.inf_amd64_e68d32e25309e80f~vpci.sys-
   MmMapIoSpaceEx
   
-C:\Windows\System32\drivers\vmnetadapter.sys-
+H:\research_list\xboxgip.inf_amd64_a82cdf0d0406e45b~xboxgip.sys-
   MmMapLockedPagesSpecifyCache
+  IoCreateSymbolicLink
   
-C:\Windows\System32\drivers\vmnetbridge.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\vmnetuserif.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\vmstorfl.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\vmswitch.sys-
+H:\research_list\xvdd.inf_amd64_a651bff0be9a1044~xvdd.sys-
   IoAllocateMdl
   MmMapLockedPagesSpecifyCache
+  IoCreateSymbolicLink
   
-C:\Windows\System32\drivers\vmusb.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\vmx86.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpace
-  IoAllocateMdl
+H:\research_list\ykinx64.inf_amd64_0bbd8466b526ef26~ykinx64.sys-
   ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\volmgr.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\volmgrx.sys-
-  MmMapLockedPagesWithReservedMapping
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\volsnap.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\vpci.sys-
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\wanarp.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\wcifs.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\Wdf01000.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\WdiWiFi.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\WdNisDrv.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\werkernel.sys-
-  ZwMapViewOfSection
-  
-C:\Windows\System32\drivers\wfplwfs.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\winhv.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\winhvr.sys-
-  MmMapLockedPagesSpecifyCache
-  MmMapIoSpaceEx
-  
-C:\Windows\System32\drivers\winnat.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\winquic.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\wintun.sys-
-  IoAllocateMdl
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\winusb.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\wireguard.sys-
-  MmMapLockedPagesSpecifyCache
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\wof.sys-
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\ws2ifsl.sys-
-  IoAllocateMdl
-  
-C:\Windows\System32\drivers\WUDFRd.sys-
-  IoAllocateMdl
-  MmMapIoSpaceEx
-  MmMapLockedPagesSpecifyCache
-  
-C:\Windows\System32\drivers\xboxgip.sys-
   MmMapLockedPagesSpecifyCache
   
